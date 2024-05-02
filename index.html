@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="todo-list">
+            <h1>create tasks <img src="./image/write.svg" alt=""></h1>
+            <div class="enter-task">
+                <input type="text" id="input-value" placeholder="enter the task">
+                <button onclick="addtask()">add</button>
+            </div>
+            <ul id="task-list">
+                <!--
+                <li class="taskline">task 1</li>
+                <li>task 2</li>
+                <li>task 3</li>
+                -->
+            </ul>
+        </div>
+        
+    </div>
+<script src="code.js"></script>
 </body>
 </html>

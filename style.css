@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: beige;
+    padding: 10px;
+}
+
+.todo-list{
+    width: 100%;
+    max-width: 520px;
+    background-color: white;
+    margin: 100px auto 50px;
+    padding: 40px 30px;
+    border-radius: 10px;
+}
+
+.todo-list h1{
+    color: brown;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-list img{
+    width: 30px;
+    margin-left: 20px;
+}
+
+.enter-task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: azure;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.todo-list input{
+    flex: 1;
+    border: none;
+    outline: none;
+   
+    font-weight: 15px;
+    padding: 10px;
+}
+
+.todo-list button{
+    border: none;
+    outline: none;
+    background-color: rgb(241, 49, 49);
+    font-size: 15px;
+    padding: 20px 40px;
+    color: beige;
+    cursor: pointer;
+    border-radius: 40px;
+
+}
+
+ul li{
+    list-style: none;
+    padding: 10px 5px 10px 50px;
+    font-size: 20px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 45px;
+    background-image: url(/image/task.svg);
+    background-position: center;
+    background-size: cover;
+    top: 10px;
+    left: 15px;
+}
+
+ul li.taskline{
+    text-decoration: line-through;
+    
+}
+
+ul li.taskline::before{
+    background-image: url(/image/completed.svg);
+}
+
+li span{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+    border-radius: 50px;
+}
+
+ul span:hover{
+    background: rgba(95, 95, 228, 0.815);
+    
+}
